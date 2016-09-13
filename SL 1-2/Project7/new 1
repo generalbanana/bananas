@@ -1,0 +1,39 @@
+import	java.util.Scanner;
+import	java.util.Random;
+
+class insertion {
+	public static void main(String []args) {
+
+		int i, j, n, swap;
+
+		n = 13;
+
+		int array[] = new int[n];
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Enter 13 Numbers")
+
+		for (j = 0; j< n; j++)
+					array[j] =in.nextInt();
+		      System.out.println(array[j]);
+
+    for (j = 0; j < ( n - 1 ); j++) {
+          for (i = 0; i < n - j - 1; i++) {
+              if (array[i] > array[i+1]) {
+                   swap = array[i];
+      			       array[i]   = array[i+1];
+      			       array[i+1] = swap;
+              }
+      	  }
+          }
+
+          System.out.println("Sorted list of numbers");
+
+          for (j = 0; j < n; j++)
+            System.out.println(array[j]);
+
+
+          System.out.println("Median Entry of Array");
+            array[j] = j[(13-1)/2];
+    }
+}
